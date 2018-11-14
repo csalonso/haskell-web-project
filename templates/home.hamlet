@@ -1,0 +1,20 @@
+<div class="topbar">
+    <p>
+        Kart Motors, o novo organizador de corridas
+
+    <div class="boxcontent">
+        <p>
+            Kart Motors, o novo organizador de corridas
+        
+        <nav class="nav navbar">
+            <li>
+                <a href=@{HomeR}>
+                    Login
+            
+            <li>
+                <a href=@{HomeR}>
+                    Cadastre-se
+           
+            <li>
+                <a href=@{HomeR}>
+                    Sobre

@@ -1,0 +1,40 @@
+body {
+    background-color: #111111;
+}
+
+p {
+    font-family: "Arial", Arial;
+    font-size: 20px;
+}
+
+.topbar {
+/*Box*/
+  background-color: black;
+  height: 65px;
+  padding: 10px;
+/*Positioning*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+/*Font inside*/
+  color: white;
+  font-size: 23px;
+}
+
+.boxcontent {
+/*Box*/
+  display: block;
+  background-color: #CCDDDD;
+  padding: 20px;
+/*Positioning*/
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 150px;
+  height: 300px;
+  border-radius: 30px;
+/*Font inside*/
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
