@@ -13,7 +13,7 @@
                 Login
             
         <li>
-            <a href=@{CadastroR}>
+            <a href=@{UsuarioR}>
                 Cadastre-se
            
         <li>

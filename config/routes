@@ -6,4 +6,4 @@
 /           HomeR       GET 
 /sobre      SobreR      GET
 /login      LoginR      GET
-/cadastro   CadastroR   GET
+/usuario    UsuarioR    GET POST
