@@ -1,0 +1,13 @@
+<div class="topbar">
+    <p>
+        <img src=@{StaticR imgs_logo_png} height=80px>
+        Kart Motors, o novo organizador de corridas
+
+<div class="boxcontent">
+    <p>
+        Cadastro
+        
+    <nav class="nav navbar">
+        <li>
+            <a href=@{HomeR}>
+                Voltar

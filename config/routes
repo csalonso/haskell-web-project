@@ -4,3 +4,6 @@
 /robots.txt RobotsR GET
 
 /           HomeR       GET 
+/sobre      SobreR      GET
+/login      LoginR      GET
+/cadastro   CadastroR   GET
