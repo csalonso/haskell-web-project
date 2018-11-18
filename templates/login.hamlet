@@ -1,7 +1,6 @@
 <div class="topbar">
     <p>
-        <img src=@{StaticR imgs_logo_png} height=80px>
-        Kart Motors, o novo organizador de corridas
+        <img src=@{StaticR imgs_logo_png } width="554" height="57">
 
 <div class="boxcontent">
     <p>
