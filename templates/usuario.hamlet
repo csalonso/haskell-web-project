@@ -1,17 +1,37 @@
-<div class="topbar">
-    <p>
-        <img src=@{StaticR imgs_logo_png} height=80px>
-        Kart Motors, o novo organizador de corridas
 
-<div class="boxcontent">
-    <p>
-        Cadastro
-    
-    <form action=@{UsuarioR} method=post enctype=#{enctype}>
-        ^{widgetForm}
-        <input type="submit" value="Cadastrar">
-        
-    <nav class="nav navbar">
-        <li>
-            <a href=@{HomeR}>
-                Voltar
+    <div class="container bodyall">
+        <div class="row">
+            <div class="col-md-4">
+                <img src=@{StaticR imgs_logo_png} height=100% width=100%>
+
+            <div class="col-md-8">
+                <h3>Cadastrar
+                <form>
+                    <div class="form-group">
+                        <label>Nome
+                        <input type="text" class="form-control" id="nome">
+                    <div class="form-group">
+                        <label>E-mail
+                        <input type="email" class="form-control" id="email">
+                        <label>Confirme seu e-mail
+                        <input type="email" class="form-control" id="email">
+                    <div class="form-group">
+                        <label>Senha
+                        <input type="password" class="form-control" id="senha">
+                        <label>Confirme sua senha
+                        <input type="password" class="form-control" id="senha">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Aceito os termos de serviço.
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="tipoperfil"> Piloto.
+                            
+                        <label>
+                            <input type="radio" name="tipoperfil"> Organizador.
+  
+                    <button type="submit" class="btn-primary">Cadastrar</button>                                                
+
+
+
+
