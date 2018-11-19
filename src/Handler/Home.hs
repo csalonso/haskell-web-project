@@ -26,3 +26,18 @@ getHomeR = do
         addStylesheet $ StaticR css_bootstrap_css
         toWidget $(luciusFile "templates/home.lucius")
         $(whamletFile "templates/home.hamlet")
+        
+postHomeR :: Handler Html
+postHomeR = do
+    ((res,_),_) <- runFormPost formLogin
+    case res of 
+        FormSuccess (email,senha) -> do
+            logado <- runDB $ selectFirst [UsuarioEmail ==. email,
+                                          UsuarioSenha ==. senha] []
+            case logado of
+                Just (Entity usrid usuario) -> do 
+                    setSession "_USR" (pack $ show usuario)
+                    redirect UsuarioR
+                Nothing -> do 
+                    redirect HomeR
+        _ -> redirect HomeR

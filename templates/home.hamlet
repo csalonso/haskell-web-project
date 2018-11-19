@@ -1,7 +1,7 @@
 <div class="container bodyall">
     <div class="row">
         <div class="col-md-4">
-            <img src=@{StaticR imgs_logo_png} height=350px width=350px>
+            <img src=@{StaticR imgs_logo_png} height=100% width=100%>
                     
         <div class="col-md-4">
             <h3>Cadastrar 
@@ -10,7 +10,7 @@
         <div class="col-md-4">
             <h3>Entrar
                     
-            <form action=@{LoginR} method=post enctype=#{enctype}>
+            <form action=@{HomeR} method=post enctype=#{enctype}>
                 ^{widgetForm}
                 <input type="submit" value="Login">
                         
