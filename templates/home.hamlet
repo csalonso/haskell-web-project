@@ -1,23 +1,21 @@
-
 <div class="container bodyall">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src=@{StaticR imgs_logo_png} height=350px width=350px>
+    <div class="row">
+        <div class="col-md-4">
+            <img src=@{StaticR imgs_logo_png} height=350px width=350px>
                     
-                <div class="col-md-4">
-                    <h3>Cadastrar 
-                    <p>O site kartmotors é um registrador de corridas, com ele o organizador de campeonatos ou de corridas de kart pode adicionar uma corrida na lista e informar a ordem de chegada dos pilotos formando uma base de dados que permite aos pilotos acompanhar as estatísticas.     
+        <div class="col-md-4">
+            <h3>Cadastrar 
+            <p>O site kartmotors é um registrador de corridas, com ele o organizador de campeonatos ou de corridas de kart pode adicionar uma corrida na lista e informar a ordem de chegada dos pilotos formando uma base de dados que permite aos pilotos acompanhar as estatísticas.     
                 
-                <div class="col-md-4">
-                    <h3>Entrar
-                    <form>
-                        <div class="form-group">
-                            <label>E-mail
-                            <input type="email" class="form-control" id="loginemail" placeholder="Digite seu e-mail">
-                        <div class="form-group">
-                            <label>Senha
-                            <input type="password" class="form-control" id="loginsenha" placeholder="Digite sua senha">
-                        <button type="submit" class="btn-primary">Entrar</button>
-                        <p>Não tem conta? - <a href=@{UsuarioR}><u>Cadastre-se
+        <div class="col-md-4">
+            <h3>Entrar
+                    
+            <form action=@{LoginR} method=post enctype=#{enctype}>
+                ^{widgetForm}
+                <input type="submit" value="Login">
+                        
+                <p>Não tem conta? - 
+                    <a href=@{UsuarioR}><u>
+                        Cadastre-se
                             
                 

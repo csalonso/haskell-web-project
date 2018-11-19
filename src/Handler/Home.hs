@@ -13,10 +13,16 @@ import Prelude
 widgetFooter :: Widget
 widgetFooter = $(whamletFile "templates/footer.hamlet")
 
+formLogin :: Form (Text,Text)
+formLogin = renderBootstrap $ (,) 
+        <$> areq emailField "E-mail: " Nothing
+        <*> areq passwordField "Senha: " Nothing
+
 getHomeR :: Handler Html
 getHomeR = do 
+    (widgetForm, enctype) <- generateFormPost formLogin
+    mensagem <- getMessage
     defaultLayout $ do 
         addStylesheet $ StaticR css_bootstrap_css
-        toWidgetHead $(juliusFile "templates/home.julius")
         toWidget $(luciusFile "templates/home.lucius")
         $(whamletFile "templates/home.hamlet")
