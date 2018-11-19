@@ -3,6 +3,10 @@
             <div class="row">
                 <div class="col-md-4">
                     <img src=@{StaticR imgs_logo_png} height=350px width=350px>
+                    
+                <div class="col-md-4">
+                    <h3>Cadastrar 
+                    <p>O site kartmotors é um registrador de corridas, com ele o organizador de campeonatos ou de corridas de kart pode adicionar uma corrida na lista e informar a ordem de chegada dos pilotos formando uma base de dados que permite aos pilotos acompanhar as estatísticas.     
                 
                 <div class="col-md-4">
                     <h3>Entrar
@@ -13,7 +17,7 @@
                         <div class="form-group">
                             <label>Senha
                             <input type="password" class="form-control" id="loginsenha" placeholder="Digite sua senha">
-
-                <div class="col-md-4">
-                    <h3>Cadastrar 
-                    <p>O site kartmotors é um registrador de corridas, com ele o organizador de campeonatos ou de corridas de kart pode adicionar uma corrida na lista e informar a ordem de chegada dos pilotos formando uma base de dados que permite aos pilotos acompanhar as estatísticas. 
+                        <button type="submit" class="btn-primary">Entrar</button>
+                        <p>Não tem conta? - <a href=@{UsuarioR}><u>Cadastre-se
+                            
+                
