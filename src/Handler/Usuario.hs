@@ -17,6 +17,7 @@ formUsuario :: Form (Usuario,Text)
 formUsuario = renderBootstrap $ (,) 
     <$> (Usuario 
             <$> areq textField "Nome: " Nothing
+            <*> areq (selectFieldList [("Organizador" :: Text, "organizador"),("Piloto", "piloto")]) "Tipo" Nothing
             <*> areq emailField "E-mail: " Nothing
             <*> areq passwordField "Senha: " Nothing
         )

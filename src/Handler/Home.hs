@@ -37,7 +37,7 @@ postHomeR = do
             case logado of
                 Just (Entity usrid usuario) -> do 
                     setSession "_USR" (pack $ show usuario)
-                    redirect UsuarioR
+                    redirect MainR
                 Nothing -> do 
                     redirect HomeR
         _ -> redirect HomeR

@@ -5,3 +5,4 @@
 
 /           HomeR       GET POST
 /usuario    UsuarioR    GET POST
+/main       MainR       GET

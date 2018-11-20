@@ -1,5 +1,6 @@
 Usuario
     nome    Text
+    tipo    Text
     email   Text
     senha   Text
     UniqueUsuario email
