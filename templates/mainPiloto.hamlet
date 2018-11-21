@@ -1,0 +1,64 @@
+<div class="topbar">
+                <img src=@{StaticR imgs_kartmotors_png} height=40px width=400px>
+                <div class="linkbtn">
+                    sair
+        
+
+        <div class="container bodyall">
+            <div class="row">
+                <div class="col-md-4">
+                        <h3><b>
+                            Diego Martinez
+                        <p>
+                            diegomrz
+                        <p>
+                            28 anos - KartMotors
+                        <h3>
+                            Clubes
+                        <p>
+                            Kart Club BS
+                        <p>
+                            Amika
+                        <p>
+                            CPKA
+                
+
+                <div class="col-md-8">
+                    <h3><b>
+                        Estatísticas
+                        <div class="col-md-4">
+                            <p>
+                                Corridas: X
+                            <p>
+                                Vitórias: X
+                            <p>
+                                Poles: X
+                            <p>
+                                Pódios: X
+                            <p>
+                                Melhores voltas: X
+                            
+                        
+                        <div class="col-md-4">
+                            <p>
+                                Vezes em 1º: X
+                            <p>
+                                Vezes em 2º: X
+                            <p>
+                                Vezes em 3º: X
+                            <p>
+                                Vezes em 4º: X
+                            <p>
+                                Vezes em 5º: X
+                        
+                        <div class="col-md-4">
+                            <p>
+                                Últimas corridas
+                            <p><u>
+                                link corrida
+                            <p><u>
+                                link corrida
+                            <p><u>
+                                link corrida
+                            <p><u>
+                                link corrida

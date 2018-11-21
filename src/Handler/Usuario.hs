@@ -21,7 +21,7 @@ formUsuario = renderBootstrap $ (,)
             <*> areq emailField "E-mail: " Nothing
             <*> areq passwordField "Senha: " Nothing
         )
-    <*> areq passwordField "Confirmacao de senha: " Nothing
+        <*> areq passwordField "Confirmacao de senha: " Nothing
         
 getUsuarioR :: Handler Html
 getUsuarioR = do 

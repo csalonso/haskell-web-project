@@ -33,11 +33,18 @@ postHomeR = do
     case res of 
         FormSuccess (email,senha) -> do
             logado <- runDB $ selectFirst [UsuarioEmail ==. email,
-                                          UsuarioSenha ==. senha] []
+                                          UsuarioSenha ==. senha,
+                                          UsuarioTipo ==. "organizador"] []
             case logado of
                 Just (Entity usrid usuario) -> do 
-                    setSession "_USR" (pack $ show usuario)
-                    redirect MainR
-                Nothing -> do 
-                    redirect HomeR
+                    redirect MainOrganizadorR
+                Nothing -> do
+                    logado <- runDB $ selectFirst [UsuarioEmail ==. email,
+                                          UsuarioSenha ==. senha,
+                                          UsuarioTipo ==. "piloto"] []
+                    case logado of
+                        Just (Entity usrid usuario) -> do 
+                            redirect MainPilotoR
+                        Nothing -> do
+                            redirect HomeR
         _ -> redirect HomeR
