@@ -29,6 +29,7 @@ h5 {
  box-shadow: black;
  margin: 90px;
  padding: 30px;
+ color: black;
 }
 
 .topbar {
@@ -37,7 +38,6 @@ h5 {
   height: 100px;
   padding: 20px;
 /*Positioning*/
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;

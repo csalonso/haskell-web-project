@@ -42,6 +42,12 @@ import Handler.Usuario
 import Handler.MainPiloto
 import Handler.MainOrganizador
 
+
+import Handler.Piloto
+import Handler.Organizador
+import Handler.Corrida
+
+
 -- This line actually creates our YesodDispatch instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see the
 -- comments there for more details.

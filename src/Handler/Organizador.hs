@@ -3,7 +3,7 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
-module Handler.MainPiloto where
+module Handler.Organizador where
 
 import Text.Lucius
 import Text.Julius
@@ -13,12 +13,10 @@ import Prelude
 widgetFooter :: Widget
 widgetFooter = $(whamletFile "templates/footer.hamlet")
 
-getMainPilotoR :: Handler Html
-getMainPilotoR = do 
+getOrganizadorR :: Handler Html
+getOrganizadorR = do 
     defaultLayout $ do 
         addStylesheet $ StaticR css_bootstrap_css
-        toWidget $(luciusFile "templates/mainPiloto.lucius")
-        $(whamletFile "templates/mainPiloto.hamlet")
-        
-        
+        toWidget $(luciusFile "templates/organizador.lucius")
+        $(whamletFile "templates/organizador.hamlet")
     

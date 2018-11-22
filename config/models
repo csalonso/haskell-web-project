@@ -5,3 +5,21 @@ Usuario
     senha   Text
     UniqueUsuario email
     deriving Show Read
+
+Pilotos json
+    nome Text
+    deriving Show
+    
+Organizadores json
+    nome Text
+    deriving Show
+    
+Corrida json
+    nome Text
+    dt_corrida Day
+    hr_corrida TimeOfDay
+    local Text
+    clima Text
+    pista Text
+    duracao Int
+    deriving Show

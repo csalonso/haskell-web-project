@@ -1,0 +1,14 @@
+<div class="topbar">
+    <img src=@{StaticR imgs_kartmotors_png} height=40px width=400px>
+    <div class="linkbtn">
+        <a href=@{HomeR}>
+            Sair
+            
+<div class="container bodyall">
+    <h3>
+        Cadastrar Corrida
+    <form action=@{CorridaR} method=post enctype=#{enctype}>
+        ^{widgetForm}
+        <input type="submit" value="Cadastrar">
+                            
+                

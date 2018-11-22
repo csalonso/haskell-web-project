@@ -1,0 +1,47 @@
+<div class="topbar">
+    <img src=@{StaticR imgs_kartmotors_png} height=40px width=400px>
+    <div class="linkbtn">
+        <a href=@{HomeR}>
+            Sair
+        
+    <div class="container bodyall">
+        <div class="row">
+            <div class="col-md-4">
+                    <h3><b>
+                        Liga de Kart BS
+                    <p>
+                        ligakartbs
+                    <p>
+                        Santos - SP
+                    <h3>
+                        Info
+                    <p>
+                        data de fundação: 20/02/2006
+                    <p>
+                        Pilotos: 65
+                    <p>
+                        Modo: Outdoor
+            
+
+            <div class="col-md-8">
+                <div class="col-md-4">
+                    <h3><b>
+                        Notícias
+                    <p> 
+                        Na próxima corrida todos deverão utilizar motores honda F400.
+                    <p> 
+                        Novatos terão 5 minutos de treino a mais e deverão utilizar sinalização amarelas em 2019.
+                        
+                    
+                <div class="col-md-4">
+                    <h3><b>
+                        Últimas corridas
+                    <p><u>
+                        link corrida
+                    <p><u>
+                        link corrida
+                    <p><u>
+                        link corrida
+                    <p><u>
+                        link corrida
+                    

@@ -7,3 +7,5 @@
 /usuario            UsuarioR            GET POST
 /main-piloto        MainPilotoR         GET
 /main-organizador   MainOrganizadorR    GET
+
+/corrida            CorridaR            GET POST
