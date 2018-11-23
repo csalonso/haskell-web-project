@@ -1,0 +1,12 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Nome
+    
+    <tbody>
+        $forall (Entity cid corrida) <- corridas
+            <tr>
+                <td>
+                    <a href=@{HomeR}> 
+                        #{corridaNome corrida}

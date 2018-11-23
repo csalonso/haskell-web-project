@@ -9,3 +9,4 @@
 /main-organizador   MainOrganizadorR    GET
 
 /corrida            CorridaR            GET POST
+/lista-corridas     ListaCorridaR       GET

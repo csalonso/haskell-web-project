@@ -9,6 +9,10 @@
         <li>
             <a href=@{CorridaR}>      
                 Cadastrar Corrida
+                
+        <li>
+            <a href=@{ListaCorridaR}>      
+                Listar Corridas
     <div class="row">
         <div class="col-md-4">
                 <h3><b>

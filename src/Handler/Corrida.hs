@@ -33,11 +33,18 @@ getCorridaR = do
         toWidget $(luciusFile "templates/corrida.lucius")
         $(whamletFile "templates/corrida.hamlet")
         
+getListaCorridaR :: Handler Html
+getListaCorridaR = do
+    corridas <- runDB $ selectList [] [Asc CorridaNome]
+    defaultLayout $ do
+        addStylesheet $ StaticR css_bootstrap_css
+        $(whamletFile "templates/lista-corridas.hamlet")
+        
 postCorridaR :: Handler Html 
 postCorridaR = do 
     ((res,_),_) <- runFormPost formCorrida
     case res of 
         FormSuccess (corrida) -> do
                 runDB $ insert corrida
-                redirect HomeR
+                redirect MainOrganizadorR
         _ -> redirect CorridaR
