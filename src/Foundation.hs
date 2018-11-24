@@ -21,10 +21,28 @@ data App = App
 
 mkYesodData "App" $(parseRoutesFile "config/routes")
 
-type Form a = Html -> MForm Handler (FormResult a, Widget)
-
 instance Yesod App where
     makeLogger = return . appLogger
+    isAuthorized MainOrganizadorR _ = isOrganizador
+    isAuthorized MainPilotoR _ = isPiloto
+    isAuthorized _ _ = return Authorized
+    --errorHandler (PermissionDenied msgErro) = undefined 
+    
+isOrganizador = do 
+    maybeOrganizador <- lookupSession "organizador" 
+    return $ case maybeOrganizador of
+        Just _ -> Authorized 
+        Nothing -> Unauthorized "nem" 
+        
+        
+isPiloto = do 
+    maybePiloto <- lookupSession "piloto" 
+    return $ case maybePiloto of
+        Just _ -> Authorized 
+        Nothing -> Unauthorized "nope" 
+    
+
+type Form a = Html -> MForm Handler (FormResult a, Widget)
 
 instance YesodPersist App where
     type YesodPersistBackend App = SqlBackend

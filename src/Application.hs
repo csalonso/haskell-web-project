@@ -41,8 +41,6 @@ import Handler.Home
 import Handler.Usuario
 import Handler.MainPiloto
 import Handler.MainOrganizador
-
-
 import Handler.Piloto
 import Handler.Organizador
 import Handler.Corrida

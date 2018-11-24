@@ -9,6 +9,7 @@ import Text.Lucius
 import Text.Julius
 import Import
 import Prelude
+import Database.Persist.Sql
 
 widgetFooter :: Widget
 widgetFooter = $(whamletFile "templates/footer.hamlet")
@@ -37,6 +38,7 @@ postHomeR = do
                                           UsuarioTipo ==. "organizador"] []
             case logado of
                 Just (Entity usrid usuario) -> do 
+                    setSession "organizador" (tshow $ fromSqlKey usrid)
                     redirect MainOrganizadorR
                 Nothing -> do
                     logado <- runDB $ selectFirst [UsuarioEmail ==. email,
@@ -44,6 +46,7 @@ postHomeR = do
                                           UsuarioTipo ==. "piloto"] []
                     case logado of
                         Just (Entity usrid usuario) -> do 
+                            setSession "piloto" (tshow $ fromSqlKey usrid)
                             redirect MainPilotoR
                         Nothing -> do
                             redirect HomeR

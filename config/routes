@@ -1,12 +1,13 @@
-/static             StaticR Static appStatic
+/static                     StaticR Static appStatic
 
-/favicon.ico        FaviconR            GET
-/robots.txt         RobotsR             GET
+/favicon.ico                FaviconR            GET
+/robots.txt                 RobotsR             GET
 
-/                   HomeR               GET POST
-/usuario            UsuarioR            GET POST
-/main-piloto        MainPilotoR         GET
-/main-organizador   MainOrganizadorR    GET
+/                           HomeR               GET POST
+/usuario                    UsuarioR            GET POST
+/main-piloto                MainPilotoR         GET
+/main-organizador           MainOrganizadorR    GET
 
-/corrida            CorridaR            GET POST
-/lista-corridas     ListaCorridaR       GET
+/corrida                    CorridaR            GET POST
+/lista-corridas             ListaCorridaR       GET
+

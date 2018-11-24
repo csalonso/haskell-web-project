@@ -40,6 +40,7 @@ getListaCorridaR = do
         addStylesheet $ StaticR css_bootstrap_css
         $(whamletFile "templates/lista-corridas.hamlet")
         
+        
 postCorridaR :: Handler Html 
 postCorridaR = do 
     ((res,_),_) <- runFormPost formCorrida
