@@ -32,7 +32,7 @@ instance Yesod App where
         toWidget [hamlet|
             <h1> 
                 NOPE
-            <img src=@{StaticR imgs_denied_gif} height=100% width=100%>
+            <img src=@{StaticR imgs_nope_jpg} height=100% width=100%>
         |]
     errorHandler other = defaultErrorHandler other
     
