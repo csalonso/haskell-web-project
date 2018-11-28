@@ -16,8 +16,8 @@ Organizadores json
     
 Corrida json
     nome Text
-    dt_corrida Day
-    hr_corrida TimeOfDay
+    dt Day
+    hr TimeOfDay
     local Text
     clima Text
     pista Text

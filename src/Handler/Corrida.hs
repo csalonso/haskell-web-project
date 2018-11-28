@@ -38,6 +38,7 @@ getListaCorridaR = do
     corridas <- runDB $ selectList [] [Asc CorridaNome]
     defaultLayout $ do
         addStylesheet $ StaticR css_bootstrap_css
+        toWidget $(luciusFile "templates/lista-corridas.lucius")
         $(whamletFile "templates/lista-corridas.hamlet")
         
         

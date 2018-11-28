@@ -1,0 +1,98 @@
+body {
+    background-color: #fff;
+    background-size: cover;
+    background-position: absolute;
+    background-size:  100% auto;
+    background-image: url(@{StaticR imgs_bgtr_png});
+    }
+
+p {
+    font-family: "Arial", Arial;
+    font-size: 20px;
+}
+
+h5 {
+     font-family: "Arial", Arial;
+    font-size: 10px; 
+}
+
+.linkbtn{
+  float: right;
+  font-size: 2-px;
+  color: red;
+  text-align: end;
+}
+
+.bodyall {
+ background: #eeeeee;
+ border-radius: 30px;
+ box-shadow: black;
+ margin: 90px;
+ padding: 30px;
+ color: black;
+}
+
+.topbar {
+/*Box*/
+  background-color: black;
+  height: 100px;
+  padding: 20px;
+/*Positioning*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+/*Font inside*/
+  color: white;
+  font-size: 23px;
+}
+
+.boxcontent {
+/*Box*/
+  display: block;
+  background-color: #CCCCCC;
+  padding: 40px;
+/*Positioning*/
+  margin: 0 auto;
+  width: 65%;
+  margin-top: 150px;
+  height: 400px;
+  border-radius: 30px;
+/*Font inside*/
+  color: black;
+  font-size: 20px;
+}
+
+.boxcontentinside1 {
+/*Box*/
+  display: inline-block;
+  margin: 20px;
+/*Positioning*/
+  margin: 0 auto;
+  width: 55%;
+  height: 75%;
+  float:left;
+/*Font inside*/
+  color: black;
+  font-size: 18px;
+}
+
+.boxcontentinside2 {
+/*Box*/
+  display: inline-block;
+  margin: 40px;
+/*Positioning*/
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 45%;
+  height: 60%;
+  float:right;
+/*Font inside*/
+  color: black;
+  font-size: 18px;
+}
+
+.center {
+    margin: auto;
+}

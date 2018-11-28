@@ -1,6 +1,7 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE ViewPatterns #-}
@@ -26,7 +27,14 @@ instance Yesod App where
     isAuthorized MainOrganizadorR _ = isOrganizador
     isAuthorized MainPilotoR _ = isPiloto
     isAuthorized _ _ = return Authorized
-    --errorHandler (PermissionDenied msgErro) = undefined 
+    errorHandler (PermissionDenied msgErro) = fmap toTypedContent $ defaultLayout $ do
+        setTitle "D E N I E D"
+        toWidget [hamlet|
+            <h1> 
+                NOPE
+            <img src=@{StaticR imgs_denied_gif} height=100% width=100%>
+        |]
+    errorHandler other = defaultErrorHandler other
     
 isOrganizador = do 
     maybeOrganizador <- lookupSession "organizador" 
