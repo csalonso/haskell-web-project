@@ -1,0 +1,17 @@
+<div class="topbar">
+    <img src=@{StaticR imgs_kartmotors_png} height=40px width=400px>
+    <div class="linkbtn">
+        <a href=@{HomeR}>
+            Sair
+        
+    <div class="container bodyall">
+        <h1>
+            #{corridaNome corrida}
+    
+        <div>
+            Local: #{corridaLocal corrida}
+
+        <div>
+            Clima: #{corridaClima corrida}
+
+

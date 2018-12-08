@@ -50,3 +50,10 @@ postCorridaR = do
                 runDB $ insert corrida
                 redirect MainOrganizadorR
         _ -> redirect CorridaR
+        
+getInfoR :: CorridaId -> Handler Html
+getInfoR cid = do 
+    corrida <- runDB $ get404 cid
+    defaultLayout $ do 
+        toWidget $(luciusFile "templates/info.lucius")
+        $(whamletFile "templates/info.hamlet")

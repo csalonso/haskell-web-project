@@ -19,7 +19,7 @@
                 $forall (Entity cid corrida) <- corridas
                     <tr>
                         <td>
-                            <a href=@{HomeR}> 
+                            <a href=@{InfoR cid}> 
                                 #{corridaNome corrida}
                                 
                         <td>
