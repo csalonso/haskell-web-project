@@ -6,11 +6,11 @@ Usuario
     UniqueUsuario email
     deriving Show Read
 
-Pilotos json
+Piloto json
     nome Text
     deriving Show
     
-Organizadores json
+Organizador json
     nome Text
     deriving Show
     
