@@ -45,4 +45,11 @@ postEditOrganizadorR = do
                 redirect MainOrganizadorR
         _ -> redirect EditOrganizadorR
         
+getInfoOrganizadorR :: OrganizadorId -> Handler Html
+getInfoOrganizadorR oid = do 
+    organizador <- runDB $ get404 oid
+    defaultLayout $ do 
+        toWidget $(luciusFile "templates/info-organizador.lucius")
+        $(whamletFile "templates/info-organizador.hamlet")
+        
         

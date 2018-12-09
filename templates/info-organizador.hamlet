@@ -1,0 +1,22 @@
+<div class="topbar">
+    <img src=@{StaticR imgs_kartmotors_png} height=40px width=400px>
+    <div class="linkbtn">
+        <a href=@{HomeR}>
+            Sair
+        
+    <div class="container bodyall">
+        <h1>
+            #{organizadorNome organizador}
+
+        <div>
+            Organização: #{organizadorOrganizacao organizador}
+            
+        <div>
+            CNPJ: #{organizadorCnpj organizador}
+            
+        <div>
+            Endereço: #{organizadorEndereco organizador}
+            
+        <div>
+            Telefone: #{organizadorTelefone organizador}
+
