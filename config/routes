@@ -14,3 +14,5 @@
 
 /main-piloto/edit           EditPilotoR         GET POST
 /main-organizador/edit      EditOrganizadorR    GET POST
+
+/main-piloto/#PilotoId/info InfoPilotoR         GET

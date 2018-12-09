@@ -45,4 +45,10 @@ postEditPilotoR = do
                 redirect MainPilotoR
         _ -> redirect EditPilotoR
         
+getInfoPilotoR :: PilotoId -> Handler Html
+getInfoPilotoR pid = do 
+    piloto <- runDB $ get404 pid
+    defaultLayout $ do 
+        toWidget $(luciusFile "templates/info-piloto.lucius")
+        $(whamletFile "templates/info-piloto.hamlet")
     
