@@ -11,10 +11,15 @@ Piloto json
     dt_nasc Day
     peso Int
     altura Int
+    cpf Text
     deriving Show
     
 Organizador json
     nome Text
+    organizacao Text
+    cnpj Text
+    endereco Text
+    telefone Text
     deriving Show
     
 Corrida json

@@ -34,6 +34,7 @@ formPiloto = renderBootstrap $ Piloto
     <*> areq dayField "Data de Nascimento: " Nothing
     <*> areq intField "Peso (Kg): " Nothing
     <*> areq intField "Altura (Cm): " Nothing
+    <*> areq textField "CPF: " Nothing
     
 postEditPilotoR :: Handler Html 
 postEditPilotoR = do 

@@ -13,3 +13,4 @@
 /corrida/#CorridaId/info    InfoR               GET
 
 /main-piloto/edit           EditPilotoR         GET POST
+/main-organizador/edit      EditOrganizadorR    GET POST

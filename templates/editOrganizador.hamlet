@@ -6,7 +6,7 @@
             
 <div class="container bodyall">
     <h3>
-        Cadastrar Piloto
-    <form action=@{EditPilotoR} method=post enctype=#{enctype}>
+        Cadastrar Organizador
+    <form action=@{EditOrganizadorR} method=post enctype=#{enctype}>
         ^{widgetForm}
         <input type="submit" value="Cadastrar">

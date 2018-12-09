@@ -39,7 +39,7 @@
                     Menu
                 <nav class="nav navbar">
                     <li>
-                        <a href=@{ListaCorridaR}>      
+                        <a href=@{EditOrganizadorR}>      
                             Editar Perfil
                             
                     <li>
