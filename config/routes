@@ -11,3 +11,5 @@
 /corrida                    CorridaR            GET POST
 /lista-corridas             ListaCorridaR       GET
 /corrida/#CorridaId/info    InfoR               GET
+
+/main-piloto/edit           EditPilotoR         GET POST

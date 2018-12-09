@@ -50,10 +50,10 @@
                     
             <div class="col-md-4">
                 <h3><b>
-                        Menu
+                    Menu
                 <nav class="nav navbar">
                     <li>
-                        <a href=@{ListaCorridaR}>      
+                        <a href=@{EditPilotoR}>      
                             Editar Perfil
                         
                     <li>
@@ -63,3 +63,5 @@
                     <li>
                         <a href=@{ListaCorridaR}>      
                             Listar Corridas
+                            
+                    

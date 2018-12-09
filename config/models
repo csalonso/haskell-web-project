@@ -8,6 +8,9 @@ Usuario
 
 Piloto json
     nome Text
+    dt_nasc Day
+    peso Int
+    altura Int
     deriving Show
     
 Organizador json
